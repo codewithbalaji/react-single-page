@@ -2,7 +2,7 @@
 
 Welcome to the repository for my single-page website built using React! This project showcases my skills in React by creating an engaging and dynamic website.
 
-![Website Preview](./preview.png) <!-- Add a preview image of your website -->
+![Website Preview](https://i.ibb.co/KyMHz17/preview.png) <!-- Add a preview image of your website -->
 
 ## Table of Contents
 - [About the Project](#about-the-project)
