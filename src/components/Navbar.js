@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { HashLink as Link } from 'react-router-hash-link';
-import img from '../assets/img.png';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -10,11 +9,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light  fixed-top bg-light ">
+    <nav
+      className="navbar navbar-expand-md navbar-light  fixed-top"
+      style={{ backgroundColor: '#c9c5c3' }}
+    >
       <div className="container">
-        <img className="small-logo bg-light" src={img} alt="" />
+        <a class="navbar-brand text-white" href="#home">
+          <b>TAMILNADU TOURISM</b>
+        </a>
         <button
-          className="navbar-toggler text-dark"
+          className="navbar-toggler text-white"
           type="button"
           onClick={handleNav}
         >
@@ -23,24 +27,38 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${nav ? 'show' : ''}`}>
           <ul className="navbar-nav ms-auto fw-bolder">
             <li className="nav-item">
-              <Link smooth to="#home" className="nav-link text-dark">
+              <Link smooth to="#home" className="nav-link text-white">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth to="#career" className="nav-link text-dark">
-                Career
+              <Link smooth to="#placetovisit" className="nav-link text-white">
+                Place To Visit
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth to="#about" className="nav-link text-dark">
-                About
+              <Link
+                smooth
+                to="#besttimetovisit"
+                className="nav-link text-white"
+              >
+                Best Time To Visit
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth to="#contact" className="nav-link text-dark">
-                Contact
+              <Link smooth to="#packages" className="nav-link text-white">
+                Packages
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link smooth to="#destination" className="nav-link text-white">
+                Destination
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link smooth to="#food" className="nav-link text-white">
+                Food
               </Link>
             </li>
           </ul>
