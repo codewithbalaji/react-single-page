@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Nav from 'react-bootstrap/Nav';
+import { Container } from 'react-bootstrap';
 
 const NavSection = () => {
   const navLinkStyle = {
@@ -10,9 +11,9 @@ const NavSection = () => {
     fontSize: '20px',
   };
   return (
-    <>
+    <Container>
       <br />
-      <Nav className="justify-content-around" activeKey="/home">
+      <Nav className="justify-content-around " activeKey="/home">
         <Nav.Item>
           <Link
             className="text-primary"
@@ -84,13 +85,13 @@ const NavSection = () => {
           <Link
             className="text-primary"
             style={navLinkStyle}
-            to="rameshwaram"
+            to="rameswaram"
             spy={true}
             smooth={true}
             offset={-50}
             duration={500}
           >
-            Rameshwaram
+            Rameswaram
           </Link>
         </Nav.Item>
         <Nav.Item>
@@ -148,7 +149,7 @@ const NavSection = () => {
       </Nav>
       <br />
       <br />
-    </>
+    </Container>
   );
 };
 

@@ -5,7 +5,7 @@ import '../../src/slider.css';
 
 const Banner = () => {
   return (
-    <Container class="mx-auto">
+    <Container className="mx-auto">
       <Row>
         <Col>
           <Carousel>
@@ -35,6 +35,16 @@ const Banner = () => {
                 <img
                   className="d-block w-100"
                   src={require('../assets/banner/image3.jpeg')}
+                  alt="First slide"
+                />
+                /
+              </div>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+              <div className="image-wrapper">
+                <img
+                  className="d-block w-100"
+                  src={require('../assets/banner/image4.jpeg')}
                   alt="First slide"
                 />
                 /
